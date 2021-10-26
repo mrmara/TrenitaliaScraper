@@ -3,16 +3,17 @@ import telebot
 from telethon.sync import TelegramClient
 from telethon.tl.types import InputPeerUser, InputPeerChannel
 from telethon import TelegramClient, sync, events
+from param import *
 class bot():
     def __init__(self,id):
         # get your api_id, api_hash, token
         # from telegram as described above
-        self.api_id = ''
-        self.api_hash = ''
+        self.api_id = api_id
+        self.api_hash = api_hash
         self.message = "Working..."
 
         # your phone number
-        self.phone = ''
+        self.phone = phone
 
         # creating a telegram session and assigning
         # it to a variable client
@@ -35,9 +36,9 @@ class bot():
         try:
             # receiver user_id and access_hash, use
             # my user_id and access_hash for reference
-            #self.client.send_message("+",mess)
-            #self.client.send_message("+",mess)
-            self.client.send_message("+",mess)
+            #self.client.send_message(num1,mess)
+            #self.client.send_message(num2,mess)
+            self.client.send_message(num3,mess)
         except Exception as e:           
             # there may be many error coming in while like peer
             # error, wrong access_hash, flood_error, etc
