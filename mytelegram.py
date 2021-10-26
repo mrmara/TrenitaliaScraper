@@ -12,7 +12,7 @@ class bot():
         self.message = "Working..."
 
         # your phone number
-        self.phone = ''
+        self.phone = '00393464768609'
 
         # creating a telegram session and assigning
         # it to a variable client
@@ -35,9 +35,9 @@ class bot():
         try:
             # receiver user_id and access_hash, use
             # my user_id and access_hash for reference
-            #self.client.send_message("",mess)
-            #self.client.send_message("",mess)
-            self.client.send_message("",mess)
+            #self.client.send_message("+",mess)
+            #self.client.send_message("+",mess)
+            self.client.send_message("+",mess)
         except Exception as e:           
             # there may be many error coming in while like peer
             # error, wrong access_hash, flood_error, etc
