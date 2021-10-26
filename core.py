@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 import re
 import warnings
 from datetime import datetime
-from param import *
+from param1 import *
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 hless = True
 restTime=0 #seconds

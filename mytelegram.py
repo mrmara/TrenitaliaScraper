@@ -36,8 +36,8 @@ class bot():
         try:
             # receiver user_id and access_hash, use
             # my user_id and access_hash for reference
-            #self.client.send_message(num1,mess)
-            #self.client.send_message(num2,mess)
+            self.client.send_message(num1,mess)
+            self.client.send_message(num2,mess)
             self.client.send_message(num3,mess)
         except Exception as e:           
             # there may be many error coming in while like peer

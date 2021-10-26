@@ -2,4 +2,4 @@
 *.session-journal
 *.log
 __pycache__
-param.py
+param*.py

@@ -9,15 +9,9 @@ from selenium.webdriver.common.by import By
 import re
 import warnings
 from datetime import datetime
+from param2 import *
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 hless = True
-id = "2"
-ArrivalStation = "Torino ( Tutte Le Stazioni )"
-DepartureStation = "Bari ( Tutte Le Stazioni )"
-day=2
-month = 1
-year=2022
-hr = "08"
 restTime=0 #seconds
 cycleTime=60 #seconds
 notification=60 #minutes
@@ -133,9 +127,11 @@ if __name__ == "__main__":
             if len(Times)!=lastTimes:
                 lastTimes=len(Times)
                 inform(mybot,str(Times))
+                print("Informing")
             if cnt==notification:
                 inform(mybot,str(Times))
                 cnt=0
+                print("Informing")
             driver.close()
             elapsed = time.time()-t
             print("Elapsed: "+str(elapsed))
