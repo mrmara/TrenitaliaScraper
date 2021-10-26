@@ -12,7 +12,7 @@ class bot():
         self.message = "Working..."
 
         # your phone number
-        self.phone = '00393464768609'
+        self.phone = ''
 
         # creating a telegram session and assigning
         # it to a variable client
