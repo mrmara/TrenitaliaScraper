@@ -9,15 +9,9 @@ from selenium.webdriver.common.by import By
 import re
 import warnings
 from datetime import datetime
+from param import *
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 hless = True
-id = "1"
-DepartureStation = "Torino ( Tutte Le Stazioni )"
-ArrivalStation = "Bari ( Tutte Le Stazioni )"
-day=23
-month = 12
-year=2021
-hr = "08"
 restTime=0 #seconds
 cycleTime=60 #seconds
 notification=60 #minutes
