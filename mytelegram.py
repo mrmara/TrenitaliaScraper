@@ -7,12 +7,12 @@ class bot():
     def __init__(self,id):
         # get your api_id, api_hash, token
         # from telegram as described above
-        self.api_id = '8758081'
-        self.api_hash = '3988872d49be46339271455e359b29ba'
+        self.api_id = ''
+        self.api_hash = ''
         self.message = "Working..."
 
         # your phone number
-        self.phone = '00393464768609'
+        self.phone = ''
 
         # creating a telegram session and assigning
         # it to a variable client
@@ -35,9 +35,9 @@ class bot():
         try:
             # receiver user_id and access_hash, use
             # my user_id and access_hash for reference
-            #self.client.send_message("+393288135320",mess)
-            #self.client.send_message("+393288135185",mess)
-            self.client.send_message("+393464768609",mess)
+            #self.client.send_message("+",mess)
+            #self.client.send_message("+",mess)
+            self.client.send_message("+",mess)
         except Exception as e:           
             # there may be many error coming in while like peer
             # error, wrong access_hash, flood_error, etc
