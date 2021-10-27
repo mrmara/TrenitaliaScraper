@@ -22,6 +22,21 @@ class core():
             from param1 import phone,api_id,api_hash,id,message,num1,num2,num3,DepartureStation,ArrivalStation,day,month,year,hr
         elif selector==2:
             from param2 import phone,api_id,api_hash,id,message,num1,num2,num3,DepartureStation,ArrivalStation,day,month,year,hr
+        print(phone)
+        print(api_id)
+        print(api_hash)
+        print(id)
+        print(message)
+        print(num1)
+        print(num2)
+        print(num3)
+        print(DepartureStation)
+        print(ArrivalStation)
+        print(day)
+        print(month)
+        print(year)
+        print(hr)
+        self.mybot = bot("AntonioMarangi"+str(id))
     def initialize(self):
         print("Initializing...")
         options = webdriver.FirefoxOptions()
@@ -113,7 +128,6 @@ class core():
         mybot.send(message)
 
     def run(self):
-        mybot = bot("AntonioMarangi"+id)
         lastTimes=0
         while True:
             try:  
@@ -131,10 +145,10 @@ class core():
                     raise Exception
                 if len(Times)!=lastTimes:
                     lastTimes=len(Times)
-                    self.inform(mybot,str(Times))
+                    self.inform(self.mybot,str(Times))
                     print("Informing")
                 if cnt==notification:
-                    self.inform(mybot,str(Times))
+                    self.inform(self.mybot,str(Times))
                     cnt=0
                     print("Informing")
                 driver.close()
@@ -150,6 +164,10 @@ class core():
 
 if __name__=="__main__":
     c1 = core(1)
+    #c2 = core(2)
     t1 = threading.Thread(target=c1.run)
+    #t2 = threading.Thread(target=c2.run)
+    #t2.start()
     t1.start()
     t1.join()
+    #t2.join()
