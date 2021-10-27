@@ -1,18 +1,16 @@
 import time
-import requests
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 from selenium.common.exceptions import NoSuchElementException
 from mytelegram import bot
 from selenium.webdriver.common.by import By
-import re
 import warnings
 from datetime import datetime
 from param2 import *
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 hless = True
-restTime=0 #seconds
+restTime=5 #seconds
 cycleTime=60 #seconds
 notification=60 #minutes
 cnt=0

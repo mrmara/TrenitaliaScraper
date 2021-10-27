@@ -3,7 +3,7 @@ import telebot
 from telethon.sync import TelegramClient
 from telethon.tl.types import InputPeerUser, InputPeerChannel
 from telethon import TelegramClient, sync, events
-from param import *
+from param1 import *
 class bot():
     def __init__(self,id):
         # get your api_id, api_hash, token

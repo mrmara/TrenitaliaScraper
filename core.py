@@ -12,7 +12,7 @@ from datetime import datetime
 from param1 import *
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 hless = True
-restTime=0 #seconds
+restTime=5 #seconds
 cycleTime=60 #seconds
 notification=60 #minutes
 cnt=0
